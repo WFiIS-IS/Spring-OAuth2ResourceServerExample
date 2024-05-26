@@ -18,9 +18,8 @@ spring:
             user-name-attribute: sub
             jwk-set-uri: https://auth.wfis.lol/application/o/zti-sem-credentials/jwks/
 springdoc:
-    swagger-ui:
-      oauth:
-        use-pkce-with-authorization-code-grant: true
-        scopes: openid,profile,email
-
-
+  swagger-ui:
+    oauth:
+      use-pkce-with-authorization-code-grant: true
+      scopes: openid,profile,email
+    path: /
